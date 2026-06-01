@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание — «Пируэт»</title>
+    <meta name="description" content="Расписание занятий студии хореографии «Пируэт» по возрастным группам, направлениям и дням недели.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wrap header__inner">
+        <a class="logo" href="index.html" aria-label="На главную">
+            <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="25" cy="8" r="4" fill="#c8a35b"/>
+                <path d="M25 12 C 22 20, 31 22, 26 31 C 24 35, 15 35, 11 32" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M25 16 C 31 16, 35 12, 37 7" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M24 21 L 15 27" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+            <span class="logo__text">ПИРУЭ<span>Т</span></span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О студии</a>
+            <a href="classes.html">Направления</a>
+            <a href="schedule.html">Расписание</a>
+            <a href="prices.html">Абонементы</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header__cta">
+            <a href="contacts.html" class="btn btn--gold">Пробное занятие</a>
+            <button class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="wrap">
+        <p class="eyebrow">Расписание</p>
+        <h1>Когда у нас занятия</h1>
+        <p>Занятия разбиты по возрасту: дети, подростки и взрослые. Выберите направление, чтобы оставить в таблице только нужные группы.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="wrap">
+        <div class="filter">
+            <button data-filter="all" class="is-active">Все направления</button>
+            <button data-filter="ballet">Балет</button>
+            <button data-filter="modern">Современный</button>
+            <button data-filter="contemporary">Современная хореография</button>
+            <button data-filter="hiphop">Хип-хоп</button>
+            <button data-filter="kids">Детям</button>
+            <button data-filter="stretch">Стретчинг</button>
+        </div>
+
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>День</th>
+                    <th>Время</th>
+                    <th>Направление</th>
+                    <th>Группа</th>
+                    <th>Педагог</th>
+                    <th>Зал</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="schedule__group"><td colspan="6">Дети</td></tr>
+                <tr data-group="kids"><td>Пн</td><td class="time">10:00</td><td><span class="tag">Детская хореография</span></td><td>3–6 лет</td><td>Е. Грачёва</td><td>Зал 2</td></tr>
+                <tr data-group="ballet"><td>Ср</td><td class="time">17:00</td><td><span class="tag">Балет</span></td><td>Дети 7–10</td><td>А. Верещагина</td><td>Зал 1</td></tr>
+                <tr data-group="kids"><td>Пт</td><td class="time">10:00</td><td><span class="tag">Детская хореография</span></td><td>3–6 лет</td><td>Е. Грачёва</td><td>Зал 2</td></tr>
+
+                <tr class="schedule__group"><td colspan="6">Подростки</td></tr>
+                <tr data-group="hiphop"><td>Пн</td><td class="time">19:30</td><td><span class="tag">Хип-хоп</span></td><td>Подростки</td><td>Д. Соколов</td><td>Зал 2</td></tr>
+                <tr data-group="modern"><td>Вт</td><td class="time">18:30</td><td><span class="tag">Современный</span></td><td>12+</td><td>М. Котова</td><td>Зал 1</td></tr>
+                <tr data-group="hiphop"><td>Чт</td><td class="time">19:30</td><td><span class="tag">Хип-хоп</span></td><td>Подростки</td><td>Д. Соколов</td><td>Зал 2</td></tr>
+                <tr data-group="contemporary"><td>Сб</td><td class="time">13:00</td><td><span class="tag">Современная хореография</span></td><td>14+</td><td>М. Котова</td><td>Зал 1</td></tr>
+
+                <tr class="schedule__group"><td colspan="6">Взрослые</td></tr>
+                <tr data-group="ballet"><td>Пн</td><td class="time">18:00</td><td><span class="tag">Балет</span></td><td>Взрослые, нач.</td><td>А. Верещагина</td><td>Зал 1</td></tr>
+                <tr data-group="stretch"><td>Вт</td><td class="time">20:00</td><td><span class="tag">Стретчинг</span></td><td>Все уровни</td><td>М. Котова</td><td>Зал 2</td></tr>
+                <tr data-group="contemporary"><td>Ср</td><td class="time">19:00</td><td><span class="tag">Современная хореография</span></td><td>Взрослые</td><td>М. Котова</td><td>Зал 1</td></tr>
+                <tr data-group="ballet"><td>Пт</td><td class="time">18:00</td><td><span class="tag">Балет</span></td><td>Взрослые, прод.</td><td>А. Верещагина</td><td>Зал 1</td></tr>
+                <tr data-group="modern"><td>Сб</td><td class="time">11:00</td><td><span class="tag">Современный</span></td><td>Взрослые</td><td>М. Котова</td><td>Зал 1</td></tr>
+                <tr data-group="stretch"><td>Вс</td><td class="time">12:00</td><td><span class="tag">Стретчинг</span></td><td>Все уровни</td><td>А. Верещагина</td><td>Зал 2</td></tr>
+            </tbody>
+        </table>
+        <p style="color:var(--muted); font-size:14px; margin-top:18px">Расписание может меняться в праздничные дни — актуальное всегда подскажем по телефону.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__grid">
+            <div>
+                <span class="logo__text">ПИРУЭ<span>Т</span></span>
+                <p class="footer__about">Студия хореографии для детей и взрослых. Классика, современный танец и тело в движении.</p>
+            </div>
+            <div>
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О студии</a></li>
+                    <li><a href="classes.html">Направления</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="prices.html">Абонементы</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Направления</h4>
+                <ul>
+                    <li><a href="classes.html">Классический балет</a></li>
+                    <li><a href="classes.html">Современный танец</a></li>
+                    <li><a href="classes.html">Современная хореография</a></li>
+                    <li><a href="classes.html">Хип-хоп</a></li>
+                    <li><a href="classes.html">Детская хореография</a></li>
+                    <li><a href="classes.html">Стретчинг и пластика</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <ul>
+                    <li>г. Псков, ул. Театральная, 14</li>
+                    <li><a href="tel:+78112000000">+7 (8112) 00-00-00</a></li>
+                    <li><a href="mailto:hello@plie-studio.ru">hello@plie-studio.ru</a></li>
+                    <li>Пн–Вс, 9:00–22:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© <span data-year></span> Студия хореографии «Пируэт»</span>
+            <span>Запись по телефону и через сайт</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
