@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и запись — «Пируэт»</title>
+    <meta name="description" content="Адрес, телефон и форма записи на пробное занятие в студии хореографии «Пируэт».">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="wrap header__inner">
+        <a class="logo" href="index.html" aria-label="На главную">
+            <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="25" cy="8" r="4" fill="#c8a35b"/>
+                <path d="M25 12 C 22 20, 31 22, 26 31 C 24 35, 15 35, 11 32" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M25 16 C 31 16, 35 12, 37 7" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M24 21 L 15 27" stroke="#33233a" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+            <span class="logo__text">ПИРУЭ<span>Т</span></span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О студии</a>
+            <a href="classes.html">Направления</a>
+            <a href="schedule.html">Расписание</a>
+            <a href="prices.html">Абонементы</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header__cta">
+            <a href="contacts.html" class="btn btn--gold">Пробное занятие</a>
+            <button class="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="wrap">
+        <p class="eyebrow">Контакты</p>
+        <h1>Запишитесь на пробное</h1>
+        <p>Оставьте заявку — перезвоним в течение дня и подберём удобное время.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="wrap split" style="align-items:start">
+        <div>
+            <form id="booking-form" class="form" novalidate>
+                <div class="form__success">Спасибо! Заявка принята. Мы перезвоним вам в ближайшее время.</div>
+
+                <div class="field">
+                    <label for="name">Как вас зовут</label>
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <div class="field__error"></div>
+                </div>
+                <div class="field">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                    <div class="field__error"></div>
+                </div>
+                <div class="field">
+                    <label for="direction">Направление</label>
+                    <select id="direction" name="direction">
+                        <option value="">— выберите —</option>
+                        <option value="ballet">Классический балет</option>
+                        <option value="modern">Современный танец</option>
+                        <option value="contemporary">Современная хореография</option>
+                        <option value="hiphop">Хип-хоп</option>
+                        <option value="kids">Детская хореография</option>
+                        <option value="stretch">Стретчинг и пластика</option>
+                    </select>
+                    <div class="field__error"></div>
+                </div>
+                <div class="field">
+                    <label for="comment">Комментарий <span style="color:var(--muted); font-weight:400">(необязательно)</span></label>
+                    <textarea id="comment" name="comment" placeholder="Например, удобное время или вопрос"></textarea>
+                </div>
+                <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox" name="agree">
+                        <span>Согласен на обработку персональных данных</span>
+                    </label>
+                    <div class="field__error"></div>
+                </div>
+                <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center">Отправить заявку</button>
+            </form>
+        </div>
+
+        <div class="prose">
+            <h3>Как нас найти</h3>
+            <p><b>Адрес:</b> г. Псков, ул. Театральная, 14, 2 этаж.<br>
+            Вход со стороны двора, рядом есть парковка.</p>
+            <p><b>Телефон:</b> <a href="tel:+78112000000" style="color:var(--gold-dark)">+7 (8112) 00-00-00</a><br>
+            <b>Почта:</b> <a href="mailto:hello@plie-studio.ru" style="color:var(--gold-dark)">hello@plie-studio.ru</a></p>
+            <p><b>Часы работы:</b> ежедневно с 9:00 до 22:00.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer__grid">
+            <div>
+                <span class="logo__text">ПИРУЭ<span>Т</span></span>
+                <p class="footer__about">Студия хореографии для детей и взрослых. Классика, современный танец и тело в движении.</p>
+            </div>
+            <div>
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О студии</a></li>
+                    <li><a href="classes.html">Направления</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="prices.html">Абонементы</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Направления</h4>
+                <ul>
+                    <li><a href="classes.html">Классический балет</a></li>
+                    <li><a href="classes.html">Современный танец</a></li>
+                    <li><a href="classes.html">Современная хореография</a></li>
+                    <li><a href="classes.html">Хип-хоп</a></li>
+                    <li><a href="classes.html">Детская хореография</a></li>
+                    <li><a href="classes.html">Стретчинг и пластика</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <ul>
+                    <li>г. Псков, ул. Театральная, 14</li>
+                    <li><a href="tel:+78112000000">+7 (8112) 00-00-00</a></li>
+                    <li><a href="mailto:hello@plie-studio.ru">hello@plie-studio.ru</a></li>
+                    <li>Пн–Вс, 9:00–22:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© <span data-year></span> Студия хореографии «Пируэт»</span>
+            <span>Запись по телефону и через сайт</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
